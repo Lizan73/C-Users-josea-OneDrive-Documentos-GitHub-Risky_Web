@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Login - The Risky Burger{% endblock %}
+
+{% block header %}Admin Login{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <h2>Experience the Best Burgers in Town</h2>
+        <p>Join us at The Risky Burger for delicious food and a fantastic atmosphere. Check out our menu or visit us today!</p>
+    </div>
+</section>
+<section class="menu-images">
+    <div class="container">
+        <h2>Establecimiento</h2>
+        <div class="gallery">
+            <img src="{{ url_for('static', filename='images/local_1.png') }}" alt="Menu Page 1" class="gallery-image">
+            <img src="{{ url_for('static', filename='images/local_2.png') }}" alt="Menu Page 2" class="gallery-image">
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <h2>Nuestra Ruleta</h2>
+        <div class="about-content">
+            <div class="gallery">
+                <img src="{{ url_for('static', filename='images/ruleta.png') }}" alt="Location Image" class="gallery-image">
+            </div>
+            <div>
+                <div class="slogan"><span class="text-bg">llevate premios cada vez que vengas !!</span></div>
+                <p><span class="text-bg">1 tirada cada 30 €</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="gallery">
+                <img src="{{ url_for('static', filename='images/location.jpg') }}" alt="Location Image" class="gallery-image">
+            </div>
+            <div>
+                <p><span class="text-bg">Location: 1234 Burger Lane, Flavor Town, USA</span></p>
+                <p><span class="text-bg">Contact: (123) 456-7890</span></p>
+                <p><span class="text-bg">Email: contact@theriskymail.com</span></p>
+                <p><span class="text-bg">Find us on Just Eat: <a href="#">Just Eat</a></span></p>
+                <div class="slogan"><span class="text-bg">The best burgers you'll ever taste!</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <h2>Donde Estamos</h2>
+        <div class="gallery">
+            <div class="map">
+                <iframe class="map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.7396399416923!2d-1.1215684!3d37.9649233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd637957b5790873%3A0x708e079a39832052!2sThe%20Risky%20Burguer!5e0!3m2!1sen!2ses!4v1694361709083!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+    
+   

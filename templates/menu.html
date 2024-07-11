@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Login - The Risky Burger{% endblock %}
+
+{% block header %}Admin Login{% endblock %}
+
+{% block content %}
+<section class="menu">
+        <h2>Entrantes</h2>
+            {% for item in items if item.category == "Entrantes" %}
+                <section class="about">
+                    <div class="container">
+                        <div class="about-content">
+                            <img src="{{ item.image }}" alt="{{ item.name }}" class="gallery-image">
+                            <div class="slogan"><span class="text-bg">{{ item.name }}</span></div>
+                            <p><span class="text-bg">{{ item.description }}</span></p>
+                            <div class="slogan"><span class="text-bg">{{ item.price }}€</span></div>
+                        </div>
+                    </div>
+                </section>
+            {% endfor %}
+        <h2>Brioche's</h2>
+            {% for item in items if item.category == "Brioche's" %}
+                <section class="about">
+                    <div class="container">
+                        <div class="about-content">
+                            <img src="{{ item.image }}" alt="{{ item.name }}" class="gallery-image">
+                            <div class="slogan"><span class="text-bg">{{ item.name }}</span></div>
+                            <p><span class="text-bg">{{ item.description }}</span></p>
+                            <div class="slogan"><span class="text-bg">{{ item.price }}€</span></div>
+                        </div>
+                    </div>
+                </section>
+            {% endfor %}
+        <h2>Burger's</h2>
+            {% for item in items if item.category == "Burger's" %}
+                <section class="about">
+                    <div class="container">
+                        <div class="about-content">
+                            <img src="{{ item.image }}" alt="{{ item.name }}" class="gallery-image">
+                            <div class="slogan"><span class="text-bg">{{ item.name }}</span></div>
+                            <p><span class="text-bg">{{ item.description }}</span></p>
+                            <div class="slogan"><span class="text-bg">{{ item.price }}€</span></div>
+                        </div>
+                    </div>
+                </section>
+            {% endfor %}
+        <h2>Postres</h2>       
+            {% for item in items if item.category == "Postres" %}
+                <section class="about">
+                    <div class="container">
+                        <div class="about-content">
+                            <img src="{{ item.image }}" alt="{{ item.name }}" class="gallery-image">
+                            <div class="slogan"><span class="text-bg">{{ item.name }}</span></div>
+                            <p><span class="text-bg">{{ item.description }}</span></p>
+                            <div class="slogan"><span class="text-bg">{{ item.price }}€</span></div>
+                        </div>
+                    </div>
+                </section>
+            {% endfor %}
+        <h2>Bebidas</h2>   
+            {% for item in items if item.category == "Bebidas" %}
+                <section class="about">
+                    <div class="container">
+                        <div class="about-content">
+                            <img src="{{ item.image }}" alt="{{ item.name }}" class="gallery-image">
+                            <div class="slogan"><span class="text-bg">{{ item.name }}</span></div>
+                            <p><span class="text-bg">{{ item.description }}</span></p>
+                            <div class="slogan"><span class="text-bg">{{ item.price }}€</span></div>
+                        </div>
+                    </div>
+                </section>
+            {% endfor %}
+</section>
+{% endblock %}
+
+    
+
+
+

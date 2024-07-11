@@ -1,0 +1,98 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+    background: rgba(128, 0, 0, 0.8);
+    transition: background 0.3s ease;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: 'Rock Salt', cursive;
+    margin-left: 20px;
+}
+
+.nav-icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: -290px;  /* Initially hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background: rgba(128, 0, 0, 0.9);
+    margin: 0;
+    padding: 60px 20px;  /* Padding to avoid overlapping with navbar */
+    display: flex;
+    margin-top: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: left 0.3s ease-in-out;  /* Smooth sliding effect */
+    z-index: 999;
+}
+
+.nav-menu.nav-menu-active {
+    left: 0;  /* Slide-in effect */
+}
+
+.nav-item {
+    margin: 15px 0;
+    width: 100%;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;  /* Smaller font size */
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.nav-link:hover {
+    color: #d9534f;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.nav-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Media Queries for tablets and mobiles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 0px;
+    }
+    .nav-menu {
+        padding: 0px 0px; 
+        margin-top: 77px;
+    }
+    .nav-toggle {
+        display: flex;
+    }
+}
